@@ -34,7 +34,7 @@ public class Base {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\browser.properties");
 		prop.load(fis);
 		log.info("Properties Loaded");
-		String browserName = prop.getProperty("browser"); // sys for jenkin
+		String browserName = System.getProperty("browser"); // sys for jenkin
 	
 		int sec=Integer.parseInt(prop.getProperty("timeout"));
 		
