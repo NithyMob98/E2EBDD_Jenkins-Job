@@ -10,7 +10,10 @@ import io.cucumber.testng.CucumberOptions;
 // @RunWith(Cucumber.class) for junit
 @CucumberOptions(
 		features="src/test/java/features",
-		glue="stepDefinations"
+		glue="stepDefinations",
+		plugin = { "pretty", "html:target/cucumber-reports" },
+		monochrome = true
+
 		)
 
 public class TestRunner extends AbstractTestNGCucumberTests {
