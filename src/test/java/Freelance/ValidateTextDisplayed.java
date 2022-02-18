@@ -24,7 +24,7 @@ public class ValidateTextDisplayed extends Base{
 
 		 lap =new LandingPage(driver);
 		String s = lap.getTitle().getText();
-		Assert.assertEquals(s, "FEATUREDe COURSES");
+		Assert.assertEquals(s, "FEATURED COURSES");
 		log.info("Title is Validated");		
 	}
 	@Test
